@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form tag</title>
+</head><style type="text/css">.login{position: absolute;top: 7%;left:35%;background-color:rgba(0,0,0,0.3);height:555px;width: 500px;transition:1s;border:1px dashed pink;border-radius: 5px;}.login:hover{
+	background-color:rgba(0,0,0,0.5);transition:1.5s;border:5px double red;border-radius: 10px;
+
+}
+.Username{background-color:rgba(0,0,0,0.0000000001);font-size: 16px;color: #FAFA;border-top-style: none;border-left-style: none;border-right-style: none;transition: 0.25s;width:300px;border:hidden;border-bottom:3px double blue;height:25px;}.mail{
+	background-color:rgba(0,0,0,0.0000000001);font-size: 16px;color: #FAFA;border-top-style: none;border-left-style: none;border-right-style: none;transition: 0.25s;width:300px;border:hidden;border-bottom:3px double blue;height:25px;margin-left: 20px;
+}
+.password{background-color:rgba(0,0,0,0.0000000001);color: pink;border:4px double blue;border-top-style: none;border-left-style: none;border-right-style: none;transition: 0.25s;width:300px;height:25px;}
+.password:hover{transition: 0.25s;font-size: 16.5px;color:white;}
+.Username:hover{transition:0.25s;font-size: 16.5px;color:white;}
+.mail:hover{transition:0.25s;font-size: 16.5px;color:white;}
+.login input{}
+#submit{background-color: orange;padding:5px 10px 5px 10px;transition: 1s;position:absolute;top: 70%;right:47%;}
+#submit:hover{transform: scale(1.5);transition: 0.5s;background-color: rgba(255,0,0,0.5);color:white;border-radius: 20px;border: 1px dashed pink;}
+.Usernamee{position: absolute;top:40%;left:9%;display: flex;}
+.first{
+	margin-right: 10px;
+	font-size: 25px;
+}
+.Email{position: absolute;top: 50%;left:10%;display: flex;}
+.Password{position: absolute;top:60%;left:10%;display: flex;}
+.second{
+	margin-right: 10px;
+	font-size: 25px;
+}.third{
+	margin-right: 10px;
+	font-size: 25px;
+}
+body{
+background-color:rgba(0,0,0,0.1);transition: 3s;
+}
+body:hover{
+background-color:rgba(0,0,0,0.5);transition: 2s;}</style>
+<body>
+	<div class="login"><form action="Home.html" method="get"><div class="Usernamee">
+		<div class="first">Username:</div><input type="text" name="Nickname" value="Aashish Panthi" placeholder="Enter your name" class="Username" maxlength="23" required/></div>
+<div class="Email"><div class="third">E-mail:</div><input type="G-mail" name="Email" class="mail" maxlength="27" minlength="6" placeholder="Enter your gmail"></div>
+		<br><div class="Password"><div class="second">Password:</div><input type="password" name="Password" placeholder="password" class="password" maxlength="16" minlength="8" required/></div><br>
+		
+	
+
+<input type="submit" name="Submit" value="Log in" id="submit" onclick="welcome()">
+</form></div>
+
+</body><script type="text/javascript">
+	function welcome()
+	{
+		alert("Please fulfill the given conditions");
+	}
+</script>
+</html>

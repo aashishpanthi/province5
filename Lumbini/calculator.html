@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<div class="main">
+	<input type="text" name="screen" onclick="" id="question_box"><br><input type="text" name="screen" onclick="" id="answer_box"><button onclick="" id="ac">AC</button><br>
+
+	<button onclick="one()" id="one">1</button><button onclick="two()" id="two">2</button><button onclick="three()" id="three">3</button><button onclick="">/</button><br/>
+
+	<button onclick="four()" id="four">4</button><button onclick="five()" id="five">5</button><button onclick="six()" id="six">6</button><button onclick="">x</button><br/>
+
+	<button onclick="seven()" id="seven">7</button><button onclick="eight()" id="eight">8</button><button onclick="nine()" id="nine">9</button><button onclick="">-</button><br/>
+
+	<button onclick="zero()" id="zero">0</button><button onclick="">.</button><button onclick="">+</button><button onclick="">=</button>
+	
+	
+	
+
+	</div>
+
+</body><style type="text/css">
+	body{
+		align-items:center;
+		justify-content: center;
+		min-height:100vh;
+
+	}
+	div.main{
+		outline:none;
+		border:15px inset rgba(0,0,0,0.1);
+		background:rgba(0,0,0,0.1);
+		height:470px;
+		width:500px;
+		overflow: hidden;
+	}
+	button{
+		height:90px;
+		width:125px;
+		background: #FAFA;
+		transition: ;
+		margin:0px;
+		padding:0px;
+		color:#000;
+		border:none;
+		outline:none;
+		font-weight:900;
+		font-size:30px;
+	}
+	input{
+		color:#000;
+		background:#FAFA;
+
+	}
+	*{
+		margin:0;
+		padding:0;
+	}
+	input:nth-child(1){
+		height:55px;
+		width:100%;
+		font-size:23px;
+		overflow:hidden;
+		border:none;
+		outline: none;
+	}
+	input#answer_box{
+		height:62px;
+		width:81%;
+		font-size:30px;
+		border:none;
+		outline:none;
+	}
+	button#ac{
+		height:62px;
+		width:95px;
+        border:none;
+	}
+</style>
+</html>

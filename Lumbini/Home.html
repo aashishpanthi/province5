@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lumbini</title>
+</head>
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;
+}
+
+	body{
+	margin-top: 80px;
+	padding: 0;
+	font-family: sans-serif;
+	background: linear-gradient(to top right,#ffffff,#e6e6ff,#ffffff,#ccccff,#ffffff,#b3b3ff,#ffffff)
+}
+
+nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.70 );
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .lumbini
+{
+	float: left;
+	height: 100%;
+	line-height: 50px;
+}
+nav .lumbini h2
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 35px;
+}
+nav ul
+{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	list-style: none;
+}
+
+.home{
+	position: relative;
+	display: block;
+	height: 50px;
+	margin-right: 3px;
+	line-height: 50px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	background-color: lightblue;
+	color:#FAFAFA;
+	text-decoration: blink;
+	text-transform: uppercase;
+	transition: 3s;
+
+	 animation-name: example;
+  animation-duration: 8s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+   0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+   0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+nav ul li a
+{
+position: relative;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color:#cccccc;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;	
+}
+nav ul li a:hover
+{
+	color: #fff;
+}
+nav ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+		background-color:rgb(800,800,800,0.3);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before
+{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+body a{
+	text-decoration: none;
+	font-size:17px;
+	color:white;
+}
+
+body a:hover{
+	color:red;
+	font-weight: bold;
+}
+.firstintro{
+font-size:22px;
+}
+
+.Legendary{
+	font-size:20px;
+}
+
+#history{
+	padding-top:50px; 
+}
+.history p{
+	font-size:20px;
+}
+.record{
+	background:rgba(0,0,0,0.1);
+	border:1px double green;
+	border-style: double;
+	
+
+}
+
+#reasons{
+	padding-top: 50px;
+}
+.reasons{
+	font-size:20px;
+}
+
+#font{
+	font-size:20px;
+}
+
+.font{
+	font-size:25px;
+}
+
+.footer-menu{
+	width:100%;
+	height:auto;
+	margin:auto;
+	background-color: rgba(0,0,0,0.8);
+	padding:20px 0px;
+}
+.footer-menu-one{
+	width:100%;
+	height:auto;
+	margin:auto;
+	margin-top:10px;
+}
+
+.footer-menu-one ul{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+.footer-menu-one ul li{
+	display: inline-block;
+	margin:0px 30px;
+}
+
+.footer-menu-one ul li a{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	color:#fff;
+
+}
+
+
+.footer-menu-one ul li a:hover{
+	color:#bbbcccaa;
+	font-size:21px;
+}
+
+
+.footer-menu-two{
+	width:100%;
+	height:auto;
+	margin:auto;
+	margin-top:10px;
+}
+
+.footer-menu-two ul{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+.footer-menu-two ul li{
+	display: inline-block;
+	margin:0px 30px;
+	text-decoration: none;
+}
+
+.footer-menu-two ul li a{
+	font-family: sans-serif;
+	font-size: 18px;
+		color:#fff;
+
+}
+
+
+.footer-menu-two ul li a:hover{
+	color:#aaa;
+}
+
+.footer-bottom{
+	background-color: green;
+	height:auto;
+	margin:auto;
+	padding:6px;
+}
+
+.footer-bottom {
+	text-align:center;
+	color:#ccc;
+	font-family: cursive;
+	font-size: 17px;
+}
+
+.footer-bottom:hover{
+	color:#FAFAFA;
+		padding:5px;
+	font-size:23px;
+}
+</style>
+<nav><div class="lumbini">
+		<h2>Lumbini</h2>
+	</div>
+	<ul>
+	<li><a href="Home.html"  class="home"> Home</a></li>
+  <li> <a href="Place to visit.html">Places to visit</a></li>
+  <li><a href="Time to visit.html">Time to visit</a></li>
+  <li> <a href="Map.html">Location</a></li>
+  <li> <a href="Gallery.html">Gallery</a></li>
+ </UL></nav>
+<body>
+	Jump to: <a href="#history">History of Lumbini </a><br/>
+	Jump to: <a href="#reasons">Reasons to visit lumbini </a><br/><br/><br/>
+	<div class="firstintro"><img src="gallery/lumbiniimage.jpg" height="225" width="400" align="right"><strong>Lumbini</strong> is the place where, according to the Buddhists tradition, Queen Mahamayadevi gave birth to Siddhartha Gautama in 563 BCE, became the Buddha and founded Buddhism.  Lumbini is listed by UNESCO as a World Heritage Site. Lumbini is a Buddhist pilgrimage site in the Rupendehi district of Province no. 5 in Nepal. Lumbini is located in present-day Rupendehi, in the Terai region of Southern Nepal, not far from the Indian-Nepalese border. It  Lumbini is one of many magnets for pilgrimage that sprang up in places pivotal to the life of the Buddha.</div><br/><br/><br/><br/>
+	<h2> Legendary Accounts</h2><p class="Legendary">
+On a beautiful morning of 623 B.C., Maya was travelling from her home in Kapilavastu to her parent’s home to give birth when she suddenly went into a labour at Lumbini. A number of myths surround this particular scene: Maya gave birth painlessly, while standing between twin Sala trees; when the child was born he immediately spoke and said “this is my final rebirth”, he then took seven steps to the four cardinal points (beginning with the north) and a lotus flower sprang forth with each step; both mother and child were washed by the divinities. This last account is the origin of “bathing the infant Buddha”, a ceremony which takes place in several Buddhist communities when celebrating the Buddha’s birth. As it happens in all legends of different buddhas, Maya died seven days after the birth of the child. Mahaprajapati, Maya’s younger sister, would become Siddhartha’s foster mother.</p><br/><br/>
+<h2> Monuments of Lumbini</h2>
+<font size="4">The birth of the auspicious and incredible child was welcomed and received by Indra and Brahma (two Brahmanical Gods).
+Soon after the birth, prince Siddhartha stood up right on a lotus pedestal and proclaimed, "I am the first and foremost of all the creatures to cross the riddle of the ocean of existence. I have come to the world to show the path of emancipation. This is my last birth and hereafter I will not be born again."</font><br/><br/>
+  
+
+
+
+<div class="history" id="history"><h2> History of Lumbini</h2>
+<p>Lumbini has been identified thanks to the Indian Emperor Ashoka, who visited the area in 248 BCE and erected a pillar with an inscription commemorating the birth of Siddhartha. He also built a wall around the village and ordered the building of four stupas to mark the spot. It is not absolutely certain that Siddhartha was actually born in Lumbini, but at least we know for certain that this was widely believed by the Buddhist community at the time of Ashoka and even earlier.</p><br/>
+
+<p>A Chinese pilgrim named Faxian (Fa-Hien, 337-c.422 CE) reports his visit to Lumini in 403 CE. In his work known as “A record of the Buddhistic kingdoms”, Faxian wrote:
+
+<div class="record"> Fifty le east from the city [Kapilavastu] was a garden, named Lumbini, where the queen [Maya] entered the pond and bathed. Having come forth from the pond on the northern bank, after (walking) twenty paces, she lifted up her hand, laid hold of a branch of a tree, and, with her face to the east, gave birth to the heir-apparent. When he fell to the ground, he (immediately) walked seven paces. Two dragon-kings [appeared] and washed his body. At the place where they did so, there was immediately formed a well, and from it, as well as from the above pond, where [Maya] bathed, the monks [even] now constantly take the water, and drink it</div>
+</p><br/><br/>
+<p>About two hundred years later, Xuanzang (Hsüan-tsang, 602-664 CE), another Chinese pilgrim who also visited Lumbini, described a number of structures in the area including some monasteries and Ashoka's pillar, shattered by lightning and lying on the ground. The site was not as popular during this particular time as it once was, but it was not entirely forgotten either. During the the 9th century CE, the area became controlled by the Muslims and later by the Hindus: During this process, the Buddhist structures were destroyed and the memory of Lumbini was lost. </p><br/>
+
+
+<p>A German archaeologist named Alois Führer rediscovered Lumbini in 1895 CE. Führer unearthed some of the structures built by Ashoka as well as a temple which included scene’s of the Buddha’s life. During the 20th century CE, a number of excavations were carried out and many Buddhist structures were rediscovered. The area has been almost entirely restored during the last few decades. One of the main structures in Lumbini is the Mayadevi temple. The temple area covers the actual place where the Buddha was born, which is indicated by the marker stone, which was discovered in 1996 CE when the temple was excavated. The temple stands adjacent to the Holy Pond where the Buddha and his mother took their first bath.</p><br/>
+
+<p>Lumbini is today one of the four main pilgrimage places in Buddhism and is also an important place of pilgrimage for those Hindus who consider the Buddha one of the many manifestations of the god Vishnu. The place is also a  UNESCO World Heritage Site.</p></div><br/><br/>
+
+
+
+
+<br/>
+<h2 id="reasons"> 10 Reasons Why You Must Visit Lumbini Before you Die</h2><br/><p class="reasons">
+Lumbini is the birthplace of Lord Buddha. It is Buddha who signifies peace in the world. His teachings carried a message of peace that later on went on to create a religion in itself. Lumbini, which lies in Kapilvastu district is the birthplace of Buddha and although there have been various controversies regarding the place of his birth, Kapilvastu is the legitimate place.</p><br/>
+
+<p class="reasons">Every scripture, every excavation, and every text have proved the legitimacy of this fact. Nowadays, this place has become the holy shrine among Buddhists all around the world.Every year, millions of peace-loving individuals from all over the world come here in search of peace. Lumbini includes a huge stretch of land, which encompasses beautiful lakes, amazing Buddhist temples, and lush gardens. This peaceful abode is great for learning about Buddhism and also to learn about meditation and the Buddhist way of life.</p><br/>
+
+
+
+<p class="reasons">Lumbini is one of the world heritage sites in the world. That in itself proves the historical, religious and cultural importance of this place. We Nepalese are really proud of our heritage and take Buddha as a Lord from our soil. So, to experience such reverence and to learn the teachings of Buddhism, do visit this place. Not only this, there are hundreds of other reasons you should visit Lumbini. Here in this article, we will be discussing ten of the major reasons for which you should definitely visit this place.</p><br/><br/>
+
+
+
+<h3 class="font"> It’s the birthplace of Lord Buddha</h3>
+<p id="font">Lord Buddha who is the founder and the preacher of Buddhism is known as an angel of peace in the world. His name and the religion that he founded has now become synonymous with peace. As a birthplace of such an influential religious leader, Lumbini is in itself a holy place to be. But, not only for Buddhists but to everyone else from every other religion can visit this place to understand the religious, cultural, traditional.</p><br/><br/>
+
+
+
+<h3 class="font"> It’s a pilgrimage for Buddhists from all around the world</h3>
+<p id="font">As the birthplace of Buddha, it is a shrine. People come here for pilgrimage and to show reverence to the harbinger of peace and light in the world. The pond that is there in the temple in Lumbini is the spot where Mayavati, Buddha’s mother, gave birth to her son. The temple that now stands in this place and the tree that is there along with the pond has now become a pilgrimage site for Buddhists all around the world.</p><br/><br/>
+
+<h3 class="font">Learn and practice meditation in beautiful monasteries</h3>
+<p id="font">One thing that comes to mind when it comes to Buddhism is meditation. In Lumbini, there are various gardens and monasteries where meditation is taught and practiced. Tourists from all over the world come to Lumbini to practice meditation. You can also opt for a course in meditation next time you are there in Lumbini. It will change your life for the best. Every morning and evenings, you can set out for any of the monasteries, gardens or any place inside the Lumbini area to sit down and meditate. Every place is meditation friendly and you will experience the utmost pleasure.</p><br/><br/>
+
+
+
+<h3 class="font">Watch the Architectural marvels from different countries from the world</h3>
+<p id="font">Since the time Lumbini was recognized as a World Heritage Site and the birthplace of Buddha, many Buddhist countries from all around the world started making their presence felt in this area. They constructed their own types of monasteries and temples that represent their own countries. As a result, now in Lumbini, there are architectural marvels from various countries that include Korea, Cambodia, China, Vietnam, and the likes. Every temple has the specialty of their own. For those who are interested in architecture, Lumbini is heaven. They can learn a lot from the temples that are built there.</p><br/><br/>
+
+
+
+<h3 class="font">Get some knowledge about Buddhism in the oldest library in Lumbini</h3>
+<p id="font">Lumbini is also the place where Buddhism came to prominence and was spread far and wide in the world. In this World Heritage Site, there is also the oldest library which contains scriptures from hundreds of years old. This library has texts you can read to learn a great deal about the history and facts of the Buddhist religion. Many scholars from all over the world come to this library to learn about religion, about Buddha and the history of Buddhism that spread all over the world.</p><br/><br/>
+
+<h3 class="font"> Reflect on World Peace watching the Peace Flame which has been burning for years</h3>
+<p id="font">In the enclosure of Lumbini, there is a Peace Flame. It is a flame that has been going on for years which has been burning continuously. It symbolizes the concept of peace that should be there in the world. It is a beautiful image to watch and internalize about. This makes this concept a beautiful idea and it is there to remind us all about the importance of peace in the world. Buddhism is the only religion that is so peaceful that is why it means a lot for all the Buddhists and also to people belonging to any other religion from all over the world.</p><br/><br/>
+
+
+
+<h3 class="font"> Learn about ancient history through the Ruins that have been excavated from ancient times</h3>
+<p id="font">The Mayadevi temple and the ruins that have been excavated have been there for thousands of years. As a tourist and a visitor, you can also go inside the enclosure of these excavations and look for yourselves the ruins of ancient temples in the place. It is a serene and holy place to be. This holiness is the one thing that Buddhists find very convincing about the birth of Buddha in Nepal. These excavations are most popular among scientists and scholars who would want to learn about the ancient land and ancient architecture, ancient history and culture.</p><br/><br/>
+
+
+
+<h3 class="font"> Observe the beautiful murals and wall paintings on the walls of monasteries</h3>
+<p id="font">In all of the monasteries that are present in the enclosure of Lumbini, there are beautiful wall paintings and murals. These paintings are part of Buddhist customs where life history and the teachings of Buddha are painted on the walls in a beautiful way. If you look at them closely, you will be able to see the life history of each and every painting. These are really informative and you will learn a great deal about the life and teachings of Buddha and the religion Buddhism in itself. It will be a beautiful tribute to Buddhism. You should definitely watch out for the scriptures, the paintings and the idols placed all around the temples and the gardens in this place. It will be a good way of learning a great deal about religion, its history, teachings, and cultural and religious symbolism.</p><br/><br/>
+
+
+
+<h3 class="font"> It is a World Heritage Site</h3>
+<p id="font">The most important of all of the reasons you should visit Lumbini is that it is a World Heritage Site. It being a World heritage site in itself is a reason enough to go and visit it. Only those places which are really important and stand for something great are included in the World Heritage Site. And that is the reason, this is a holy place for Buddhists and Hindus alike. Nepalese are all really proud of this place and would love to be here. The world heritage site makes us proud of the fact that we belong to the place where Buddha once set his foot and worked in the spreading of Buddhist teachings as a religion which later on made an impact in so many people. As a result, many people from all around the world converted to Buddhism and followed the Buddhist way of life.</p><br/><br/>
+
+
+
+<h3 class="font">The Ashoka Pillar in Lumbini is proof that Emperor Ashoka visited it</h3>
+<p id="font">Ashoka, who is a renowned emperor of India in 249 BC visited the Lumbini village of that time and erected this pillar as a testimony to his visit. Along with it, he also built four stupas with horse idol on top. This legitimizes Lumbini as the birthplace of Buddha. In the pillar, he has also written inscriptions that describe his visit and the importance of Lumbini as the birthplace of Buddha. This pillar holds historical importance and significance. It is one of the major attractions of Lumbini. You definitely need to see this thousand of year old pillar to truly understand the beauty and significance of Lumbini.</p><br/><br/>
+
+
+
+<p>There are many reasons why you should visit Lumbini. The ones given above are just a few of them. We will discuss the other ones in our new articles. For now, do make a point to visit Lumbini. It is a beautiful place filled with historic, cultural, religious and architectural importance. It will be a once in a lifetime opportunity to learn about the Buddhist religion, its importance and everything you need to know about Buddhism in general. You will definitely not regret your decision to visit Lumbini. So, next time you have a vacation, do visit Lumbini.</p><br/><br/><br/><br/><br/>
+<div class="footer-menu">
+<div class="footer-menu-one">
+			<ul>
+	<li><a href="Home.html"> Home</a></li>
+  <li> <a href="Place to visit.html">Places to visit</a></li>
+  <li><a href="Time to visit.html">Time to visit</a></li>
+  <li> <a href="Map.html">Location</a></li>
+  
+	</ul>
+</div>
+<div class="footer-menu-two">
+<ul>
+<li><a href="Festivals.html" target="blank"> Festivals</a></li>
+  <li> <a href="Major Attractions.html">Major Attractions</a></li>
+  <li> <a href="Gallery.html">Gallery</a></li>
+</ul>
+</div>
+
+</div><div class="footer-bottom"> Designed by: Aashish Panthi
+</div>
+</body>
+</html>

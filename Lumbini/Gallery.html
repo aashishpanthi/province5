@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galllery</title>
+</head><style type="text/css">
+
+	body{
+		background-image:url(bg.jpg);
+	}
+	nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.70 );
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .lumbini
+{
+	float: left;
+	height: 100%;
+	line-height: 50px;
+}
+nav .lumbini h2
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 35px;
+}
+nav ul
+{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	list-style: none;
+}
+
+.gallery{
+	position: relative;
+	display: block;
+	height: 50px;
+	margin-right: 3px;
+	line-height: 50px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	background: #800000;
+	color: red;
+	text-decoration: blink;
+	text-transform: uppercase;
+	transition: 3s;
+}
+nav ul li a
+{
+position: relative;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color:#cccccc;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;	
+}
+nav ul li a:hover
+{
+	color: #fff;
+}
+nav ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+		background-color:rgb(800,800,800,0.3);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before
+{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+	body{
+		margin-top:0px;
+		padding:0px;
+		font-family:sans-serif;
+			}
+
+.photo a{
+	color:red;
+	text-decoration:none;
+	font-size: 32px;
+	border:2px double lightgreen;
+	transition:  1.5s;
+}
+.photo a:hover{
+	font-family: sans-serif;
+	font-weight: bold;
+	color:black;
+	background-image: radial-gradient(#FFF,#eee,#FFFFFF,#bbb,#ffffff,#abc); 
+	font-size: 32px;
+	border:2px solid gray;
+	border-style: dashed;
+	transition:  1s;
+}
+
+.photo a{
+	position: absolute;
+	top:50%;
+	left:25%;
+	transform: translate(-50%,-50%);
+	color:#1670f0;
+}
+
+
+.video a{
+	color:white;
+	text-decoration:none;
+	font-size: 32px;
+	border:2px double lightgreen;
+	transition:  1s;
+}
+.video a:hover{
+	font-family: sans-serif;
+	font-weight: bold;
+	color:black;
+	background-image: radial-gradient(#FFF,#eee,#FFFFFF,#bbb,#ffffff,#abc); 
+	font-size: 32px;
+	border:2px solid gray;
+	border-style: dashed;
+	transition:  1.5s;
+}
+
+.video a{
+	position: absolute;
+	top:50%;
+	right:25%;
+	transform: translate(-50%,-50%);
+	color:#1670f0;
+}
+
+
+.video a,.photo a{
+	padding:30px 60px;
+	font-size:30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-shadow: 0px 20px 50px rgba(0,0,0,0.5);
+}
+
+.video a:before,.photo a:before
+{
+	content:'';
+	position:absolute;
+	top:2px;
+	left:2px;
+	width:50%;
+	background: rgba(255,255,255,0.5);
+}
+
+#video{
+	color:purple;
+}
+
+
+.video a span:nth-child(1),.photo a span:nth-child(1){
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:2px;
+	background: linear-gradient(to right, #0c002b,#1779ff);
+}
+
+
+.video a span:nth-child(2),.photo a span:nth-child(2){
+	position:absolute;
+	left:0;
+	top:0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(to bottom, #0c002b,#1779ff);
+}
+
+.video a span:nth-child(3),.photo a span:nth-child(3){
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:2px;
+	background: linear-gradient(to left, #0c002b,#1779ff);
+}
+
+
+.video a span:nth-child(4),.photo a span:nth-child(4){
+	position:absolute;
+	right:0;
+	top:0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(to top, #0c002b,#1779ff);
+}
+
+
+
+
+</style>
+<nav><div class="lumbini">
+		<h2>Lumbini</h2>
+	</div>
+	<ul>
+	<li><a href="Home.html"> Home</a></li>
+  <li> <a href="Place to visit.html">Places to visit</a></li>
+  <li><a href="Time to visit.html">Time to visit</a></li>
+  <li> <a href="Map.html">Location</a></li>
+  <li> <a href="Gallery.html"  class="gallery">Gallery</a></li>
+ </UL></nav>
+<body>
+	<div class="photo">
+<a href="Photos.html" target="_blank">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	Photos
+</a></div>
+
+<div class="video"><a href="Video.html" alt="There is an error in my project" target="_blank" id="video">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	Videos
+</a></div>
+</body>
+</html>
