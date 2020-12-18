@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lumbini</title>
+</head>
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;
+}
+
+	body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(128,128,128,0.3 );
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .lumbini
+{
+	float: left;
+	height: 100%;
+	line-height: 50px;
+}
+nav .lumbini h2
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 35px;
+}
+nav ul
+{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	list-style: none;
+}
+
+.place{
+	position: relative;
+	display: block;
+	height: 50px;
+	margin-right: 3px;
+	margin-left: 3px;
+	line-height: 50px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	background: #800000;
+	color: red;
+	text-decoration: blink;
+	text-transform: uppercase;
+	transition: 3s;
+}
+nav ul li a
+{
+position: relative;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color:#800000;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;	
+}
+nav ul li a:hover
+{
+	color: #fff;
+}
+nav ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+		background-color:rgb(800,800,800,0.3);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before
+{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+body{
+	margin-top: 70px;
+	background: radial-gradient(#ffffff,#e6ffff
+,#ccffff,#b3ffff,#99ffff,#80ffff,#66ffff,#4dffff,#33ffff,#1affff,#00ffff,#00e6e6,#00cccc,#fff,#ffffff)
+}
+
+.border a{
+	color:red;
+	text-decoration:none;
+	font-size: 32px;
+	border:2px double lightgreen;
+}
+.border a:hover{
+	font-family: sans-serif;
+	font-weight: bold;
+	color:white;
+	background:rgba(0,0,0,0.6);
+	font-size: 32px;
+	border:2px solid gray;
+	border-style: dashed;
+border-radius:55px;
+}
+
+
+
+</style>
+<nav><div class="lumbini">
+		<h2>Lumbini</h2>
+	</div>
+	<ul>
+	<li><a href="Home.html"> Home</a></li>
+  <li> <a href="Place to visit.html" class="place">Places to visit</a></li>
+  <li><a href="Time to visit.html">Time to visit</a></li>
+  <li> <a href="Map.html">Location</a></li>
+  <li> <a href="Gallery.html">Gallery</a></li>
+  <li><a href="Festivals.html">Festivals</a></li></UL></nav>
+<body>
+	<h2>Places to visit in Lumbini</h2>
+	Nepalese and international Monasteries/ Vihars representing vernacular architecture and culture of different Buddhist countries and Buddhist traditions fascinate the visitors to Lumbini. The Royal Thai Monastery (Thailand) , Monastery of Mahabodhi Society of Kolkatta, Myanmar Monastery (Myanmar), International Nuns' Temple (Nepal), Dhamma Janani Meditation Center (Nepal), Sri Lankan Monastery(Sri Lanka), Cambodian Monastery (Cambodia) are worth visiting monasteries in the east monastic zone.
+
+
+The Great Lotus Stupa (Tara Foundation, Germany), Drigung Kagyud Meditation Centre (India), Sokyo Temple (Japan), Linhson Monastery (France), Chinese Monastery (China), Korean Mahabodhi Society Monastery (South Korea), Vietnam Phat Quoc Tu (Vietnam), Geden International (Austria), Manang Monastery (Nepal), Dharmodaya Sabha Monastery (Nepal), Panditarama Meditation Center (Myanmar) in the West Monastic Zone attract a large number of pilgrims and visitors in Lumbini. Lumbini Museum, Lumbini International Research Institute, World Peace Pagoda (Japan), Eternal Peace Flame, Peace Bell, and Crane Sanctuary add to the beauty and serenity of Lumbini.<br/><br/><br/><br/>
+<h3 style="color:hotpink;font-size:30px;text-align:center;">Popular places</h3>
+<table cellpadding="5" cellspacing="45" width="100%" height="666">
+	<tr><td><a href="Major attractions.html#Mayadevi" title="Mayadevi temple"><img src="gallery/mayadevi.jpg"></a><br/>
+<strong>Mayadevi Temple</strong></td>
+	<td align="center"><img src="gallery/shantideep.jpg" ><br/>
+<strong>Shanti deep</strong></td>
+<td align="right"><img src="gallery/peacepagoda.jpg">
+<p style="text-align:center;"><strong>World peace pagoda</strong></p></td></tr>
+
+	<tr><td><img src="gallery/panditrama.jpg"><br/>
+<strong>Panditarama Lumbini Vipassana Meditation Center</strong></td>
+	<td align="center"><img src="gallery/thai.jpg" ><br/>
+<strong>Thai monastery</strong></td>
+<td align="right"><img src="gallery/Nuns Temple.jpg"><br/>
+<p style="text-align:right;"><strong>Gautami Nuns Temple</strong></p></td></tr>
+
+<tr><td><img src="gallery/austrian.jpg"  height="300"><br/>
+<strong>European-Austrian Temple</strong></td>
+	<td align="center"><img src="gallery/ashoka.jpg" height="300"><br/>
+<strong>Ashoka piillar</strong></td>
+<td align="right"><img src="gallery/Little Buddha Statue.jpg"  height="300"><br/>
+<p style="text-align:center;"><strong>Little Buddha Statue</strong></p></td></tr>
+
+<tr><td><img src="gallery/temple.jpg" height="200" ><br/>
+<strong>Cambodia Lumbini Buddhist Temple</strong></td>
+	<td align="center"><img src="gallery/chia.jpg" ><br/>
+<strong>Chinese Temple </strong></td>
+<td align="right"><img src="gallery/thou.jpg"><br/>
+<p style="text-align:center;"><strong>The Thousand Buddha Temple</strong></p></td></tr>
+
+<tr><td><img src="gallery/srilankan.jpg"><br/>
+<strong>Sri Lanka Temple</strong></td>
+	<td align="center"><img src="gallery/dhamma.jpg" ><br/>
+<strong>Dhamma Janani Vipassana Meditation Centre</strong></td>
+<td align="right"><img src="gallery/Koreatemple.jpg"><br/>
+<p style="text-align:center;"><strong>Korea Temple</strong></p></td></tr>
+
+<tr><td><img src="gallery/karma Samteling monastery.jpg"><br/>
+<strong>Karma Samteling monastery</strong></td>
+	<td align="center"><img src="gallery/Nepal Vajrayana Mahavihara.jpg" ><br/>
+<strong>Nepal Vajrayana Mahavihara</strong></td>
+<td align="right"><img src="gallery/France Buddhist Temple.jpg" height="200" width="250"><br/>
+<p style="text-align:center;"><strong>France Buddhist Temple</strong></p></td></tr>
+
+<tr><td><img src="gallery/Urgen Dorjee Choling Buddhist Centre Singapore Temple.jpg" height="200" width="265"><br/>
+<strong>Urgen Dorjee Choling Buddhist Centre Singapore Temple</strong></td>
+	<td align="center"><img src="gallery/Canadian temple.jpg" height="200"><br/>
+<strong>Canadian temple</strong></td>
+<td align="right"><img src="gallery/Indian monastery.jpg" height="200"><br/>
+<p style="text-align:center;"><strong>Indian monastery</strong></p></td></tr>
+
+<tr><td><img src="gallery/Myanmar Golden Temple.jpg" height="200" ><br/>
+<strong>Myanmar Golden Temple</strong></td>
+	<td align="center"><img src="gallery/Linh Son Monastery.jpg" height="200"><br/>
+<strong>Linh Son Monastery</strong></td>
+<td align="right"><img src="gallery/中华寺.jpg" height="200" width="250"><br/>
+<p style="text-align:center;"><strong>Indian monastery</strong></p></td></tr>
+
+<tr><td><img src="terrifiedgarden.jpg" height="200" ><br/>
+<strong>Terrified Garden</strong></td>
+	<td align="center"><img src="Lumbini_International_Research_Institute.jpg" height="200"><br/>
+<strong>Lumbini International Research Institute</strong></td>
+<td align="right"><img src="gallery/museum.jpg" height="200" ><br/>
+<p style="text-align:center;"><strong>Lumbini Museum</strong></p></td></tr>
+
+<tr><td><img src="gallery/Bodhi.jpg" height="200" ><br/>
+<strong>Bodhi Tree</strong></td>
+	<td align="center"><img src="gallery/Cambodian Monastery.jpg" height="200"><br/>
+<strong>Cambodian Monastery</strong></td>
+<td align="right"><img src="gallery/pond.jpg" height="200" ><br/>
+<p style="text-align:center;"><strong>Mayadevi Pond</strong></p></td></tr>
+</table>
+<br/><br/><br/><br/><h2 style="color:red;" class="border"><a href="Major attractions.html"
+Title="Major Attractions of Lumbini" title="Major attractions of lumbini" target="blank">
+Major attractions</a></h2><br/><br/>
+
+</body>
+</html>
